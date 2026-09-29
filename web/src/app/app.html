@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="container">
+    <a class="brand" routerLink="/">Employee Directory</a>
+    <nav aria-label="Primary">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Overview</a>
+      <a routerLink="/employees" routerLinkActive="active">Employees</a>
+      <a routerLink="/departments" routerLinkActive="active">Departments</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <router-outlet />
+</main>
